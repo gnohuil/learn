@@ -24,9 +24,9 @@ public class TraditionalThreadCommunication {
 				}
 		).start();
 		
-		for(int i=1;i<=50;i++){
-			business.main(i);
-		}
+//		for(int i=1;i<=50;i++){
+//			business.main(i);
+//		}
 		
 	}
 

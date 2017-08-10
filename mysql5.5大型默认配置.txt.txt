@@ -1,0 +1,76 @@
+[client]
+port = 3306
+socket = /tmp/mysql.sock
+[myisamchk]
+key_buffer_size = 128M
+read_buffer = 2M
+sort_buffer_size = 128M
+write_buffer = 2M
+[mysql]
+no-auto-rehash
+[mysqld]
+back_log = 2000
+basedir = /opt/udb/program/mysql/mysql-5.5.24
+bind-address = 127.0.0.1
+binlog-format = MIXED
+character_set_server = utf8
+datadir = /opt/udb/instance/mysql-5.5/xxxxxxxx/data
+event_scheduler = ON
+expire_logs_days = 7
+general-log-file = /opt/udb/instance/mysql-5.5/xxxxxxxx/log/mysqld.log
+innodb_buffer_pool_size = 377487360
+innodb_data_file_path = ibdata1:100M:autoextend
+innodb_data_home_dir = /opt/udb/instance/mysql-5.5/xxxxxxxx/data
+innodb_file_per_table = 1
+innodb_flush_log_at_trx_commit = 2
+innodb_flush_method = O_DIRECT
+innodb_io_capacity = 2000
+innodb_log_buffer_size = 8388608
+innodb_log_file_size = 512M
+innodb_log_files_in_group = 2
+innodb_log_group_home_dir = /opt/udb/instance/mysql-5.5/xxxxxxxx/data
+innodb_max_dirty_pages_pct = 50
+innodb_open_files = 1024
+innodb_read_io_threads = 8
+innodb_thread_concurrency = 20
+innodb_write_io_threads = 8
+key_buffer_size = 268435456
+local_infile = 1
+log-bin = /opt/udb/instance/mysql-5.5/xxxxxxxx/binlog/mysql-bin.log
+log-error = /opt/udb/instance/mysql-5.5/xxxxxxxx/log/mysqld.log
+log_bin_trust_function_creators = 1
+log_output = TABLE
+long_query_time = 3
+max_allowed_packet = 16777216
+max_connect_errors = 1000000
+max_connections = 5000
+myisam_sort_buffer_size = 67108864
+pid-file = /opt/udb/instance/mysql-5.5/xxxxxxxx/mysqld.pid
+port = 3306
+query_cache_size = 0
+query_cache_type = 0
+read_buffer_size = 1048576
+read_rnd_buffer_size = 4194304
+relay-log = /opt/udb/instance/mysql-5.5/xxxxxxxx/relaylog/mysql-relay.log
+secure-file-priv = /opt/udb/instance/mysql-5.5/xxxxxxxx/tmp
+server-id = 2130706433
+skip-slave-start
+skip_name_resolve
+slave-load-tmpdir = /opt/udb/instance/mysql-5.5/xxxxxxxx/tmp
+slow-query-log-file = /opt/udb/instance/mysql-5.5/xxxxxxxx/log/mysql-slow.log
+slow_query_log = 1
+socket = /opt/udb/instance/mysql-5.5/xxxxxxxx/mysqld.sock
+sort_buffer_size = 1048576
+sync_binlog = 1
+table_open_cache = 256
+thread_cache_size = 100
+tmpdir = /opt/udb/instance/mysql-5.5/xxxxxxxx/tmp
+user = mysql
+[mysqld_safe]
+log-error = /opt/udb/instance/mysql-5.5/xxxxxxxx/log/mysqld.log
+pid-file = /opt/udb/instance/mysql-5.5/xxxxxxxx/mysqld.pid
+[mysqldump]
+max_allowed_packet = 16M
+quick
+[mysqlhotcopy]
+interactive-timeout
